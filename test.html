@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            position: relative;
+            text-align: center;
+            color: white;
+            width: 100%;
+        }
+        .head1{
+            background-color: rgba(0, 0, 0, 0.805);
+            visibility: 30%;
+            height:max-content;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .head1 h1{
+            font-size: 2rem;
+            color: white;
+        }
+        header video{
+            width: 100%;
+            position: absolutes;
+        }
+        nav{
+            float: right;
+        }
+        nav ul{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: flex-end;
+
+        }
+        nav ul li {
+            list-style: none;
+            padding: 10px 20px;
+            
+        }
+        nav ul li a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 8px 16px;
+            transition: all 0.4s ease-in-out;
+            border-radius: 4px;
+            font-size: larger;
+        }
+        nav ul li a:hover{
+            background-color: rgba(0, 0, 0, 0.653);
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <video autoplay muted  loop plays-inline class="backVideo" >
+        <source src="env2.mp4" type="video/mp4" >
+        </video>
+        <div class="head1" style="color: black;">
+            <div style="display: flex; align-items: center; justify-content: flex-start; flex-wrap: nowrap;">
+                <img src="logo.png" alt="logo" width="100px">
+                <h1  style="align-items: center; text-align: center;">Soil Pollution</h1>
+            </div>
+            <nav id="nav1">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#causes">Causes</a></li>
+                    <li><a href="#effects">Effects</a></li>
+                    <li><a href="#prevention">Prevention</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
